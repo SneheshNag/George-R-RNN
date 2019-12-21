@@ -1,6 +1,7 @@
 # char-rnn.pytorch
 
 This is a word-level pyTorch implementation of [char-rnn](https://github.com/karpathy/char-rnn) for word-level text generation. A chunk of tokens (words) is selected and the model is trined with it to predict the next token using a dictionary created from a text corpus. 
+George R. R. Martin's Game of Thrones series was the first text to be used to train the model, and hence the name of the project.
 
 ## Training
 
