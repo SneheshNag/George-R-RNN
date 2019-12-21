@@ -1,10 +1,10 @@
 # char-rnn.pytorch
 
-A PyTorch implementation of [char-rnn](https://github.com/karpathy/char-rnn) for character-level text generation. This is copied from [the Practical PyTorch series](https://github.com/spro/practical-pytorch/blob/master/char-rnn-generation/char-rnn-generation.ipynb).
+This is a word-level pyTorch implementation of [char-rnn](https://github.com/karpathy/char-rnn) for word-level text generation. A chunk of tokens (words) is selected and the model is trined with it to predict the next token using a dictionary created from a text corpus. 
 
 ## Training
 
-Download [this Shakespeare dataset](https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt) (from the original char-rnn) as `shakespeare.txt`.  Or bring your own dataset &mdash; it should be a plain text file (preferably ASCII).
+Download [this Shakespeare dataset](https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt) (from the original char-rnn) as `shakespeare.txt`.  Or bring your own dataset &mdash; make sure it is a plain text file (preferably ASCII)!
 
 Run `train.py` with the dataset filename to train and save the network:
 
